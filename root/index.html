@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal photo gallery" />
+  <title>My Photo Gallery</title>
+
+  <!-- Google Font (clean, modern) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Cloudflare Web Analytics (optional). Replace TOKEN then uncomment to enable.
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token":"YOUR_CLOUDFLARE_TOKEN"}'></script>
+  End Cloudflare Web Analytics -->
+
+  <!-- Google Analytics 4 loader ONLY (optional). Replace ID then uncomment to enable.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  End GA4 loader -->
+</head>
+<body>
+  <noscript class="nojs">This gallery uses small bits of JavaScript for the lightbox. Everything still works, but image popups will be disabled.</noscript>
+
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h1>Adam Rowan McDonald Personal Photo Gallery</h1>
+          <div class="subtitle"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="gallery" id="gallery" aria-label="Photo gallery">
+        <!-- Example tiles -->
+        <figure class="photo">
+          <div class="frame">
+            <img src="images/photo1.jpg" alt="Misty forest at dawn" loading="lazy" data-full="images/photo1.jpg">
+          </div>
+          <figcaption>
+            <span class="title">Full of the presence of a strange and watchful God</span>
+            <span class="meta">Forest • 2025</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo">
+          <div class="frame">
+            <img src="images/photo2.jpg" alt="City skyline under emerald twilight" loading="lazy" data-full="images/photo2.jpg">
+          </div>
+          <figcaption>
+            <span class="title">Watchful Pandora</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo">
+          <div class="frame">
+            <img src="images/photo3.jpg" alt="Ocean cliff and waves" loading="lazy" data-full="images/photo3.jpg">
+          </div>
+          <figcaption>
+            <span class="title">Trenton, GA</span>
+          </figcaption>
+        </figure>
+
+        <figure class="photo">
+          <div class="frame">
+            <img src="images/photo4.jpg" alt="Concert crowd and stage lights" loading="lazy" data-full="images/photo4.jpg">
+          </div>
+          <figcaption>
+            <span class="title">Isakov concert</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        &copy; <span id="year"></span> Adam McDonald. All rights reserved.
+        <div class="footer-note">A small collection of pictures.</div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox-inner">
+      <img class="lightbox-img" id="lightboxImg" alt="Expanded view" />
+      <div class="controls">
+        <button class="btn nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+        <button class="btn nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+        <button class="btn close" id="closeBtn" aria-label="Close viewer">✕</button>
+      </div>
+      <div class="lightbox-caption">
+        <div class="lightbox-title" id="lightboxTitle">&nbsp;</div>
+        <div class="lightbox-meta" id="lightboxMeta"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <!-- Optional GA4 event wiring (requires GA loader above) -->
+  <script src="js/analytics.js"></script>
+</body>
+</html>
