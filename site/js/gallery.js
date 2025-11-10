@@ -14,21 +14,22 @@
   const photos = await res.json();
 
   function render(){
-    console.log("Rendering photos:", photos);
-    grid.innerHTML = '';
-    photos.forEach(p => {
-      const a = document.createElement('button');
-      a.className = 'card';
-      a.setAttribute('aria-label', `Open ${p.title}`);
-      a.innerHTML = \`
-        <img class="thumb" loading="lazy" src="\${p.src}" alt="\${p.alt}"/>
-        <h3>\${p.title}</h3>
-        <p class="muted">\${p.caption||''}</p>
-      \`;
-      a.addEventListener('click', () => openModal(p));
-      grid.appendChild(a);
-    });
-  }
+  console.log("Rendering photos:", photos);
+  grid.innerHTML = '';
+  photos.forEach(p => {
+    const a = document.createElement('button');
+    a.className = 'card';
+    a.setAttribute('aria-label', `Open ${p.title}`);
+    a.innerHTML = `
+      <img class="thumb" loading="lazy" src="${p.src}" alt="${p.alt}"/>
+      <h3>${p.title}</h3>
+      <p class="muted">${p.caption || ''}</p>
+    `;
+    a.addEventListener('click', () => openModal(p));
+    grid.appendChild(a);
+  });
+}
+
 
   function openModal(photo){
     modalImg.src = photo.src;
