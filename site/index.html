@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery • Adam Sutton</title>
+  <meta name="description" content="Family photo gallery and personal site." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖼️</text></svg>">
+
+</head>
+<body>
+  <div id="headerMount"></div>
+  <main id="main" tabindex="-1">
+
+  <section class="container">
+    <h1 class="page-title">Gallery</h1>
+    <p class="muted">Click a photo to view details. Use the Albums page to explore by theme.</p>
+    <div id="galleryGrid" class="grid"></div>
+    <div class="toolbar">
+      <button class="btn admin-only hidden" id="addPhotoBtn">Upload Photo</button>
+      <button class="btn outline" id="slideshowBtn" aria-pressed="false">Start Slideshow</button>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <dialog id="imageModal" aria-labelledby="imageTitle">
+    <article class="modal-card">
+      <img id="modalImg" alt="Expanded photo" />
+      <div class="modal-meta">
+        <h3 id="imageTitle">Photo title</h3>
+        <p id="imageCaption" class="muted"></p>
+        <p id="imageAlbums" class="muted"></p>
+      </div>
+      <div class="modal-actions">
+        <button value="cancel" class="btn btn-ghost">Close</button>
+        <button class="btn admin-only hidden" id="editPhotoBtn">Edit</button>
+      </div>
+    </article>
+  </dialog>
+
+  <script defer src="/js/gallery.js"></script>
+
+  </main>
+  <div id="footerMount"></div>
+
+  <!-- Login Modal -->
+  <dialog id="loginModal" aria-labelledby="loginTitle">
+    <form method="dialog" class="modal-card" id="loginForm" novalidate>
+      <h2 id="loginTitle">Administrator Login</h2>
+      <p class="muted">Normal visitors don’t need to log in. Admin login enables uploads and edits.</p>
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" required />
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required />
+      <div class="modal-actions">
+        <button value="cancel" class="btn btn-ghost">Cancel</button>
+        <button type="submit" class="btn">Log in</button>
+      </div>
+      <p id="loginError" class="error" role="alert" aria-live="assertive" hidden>Invalid credentials.</p>
+    </form>
+  </dialog>
+
+  <script defer src="/js/analytics.js"></script>
+  <script defer src="/js/auth.js"></script>
+  <script defer src="/js/main.js"></script>
+
+</body>
+</html>

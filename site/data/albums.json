@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "favorites",
+    "title": "Favorites",
+    "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=70&auto=format&fit=crop",
+    "description": "A rotating selection of favorites."
+  },
+  {
+    "slug": "travel",
+    "title": "Travel",
+    "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=70&auto=format&fit=crop",
+    "description": "Trips and places I loved."
+  },
+  {
+    "slug": "nature",
+    "title": "Nature",
+    "cover": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=70&auto=format&fit=crop",
+    "description": "Forests, lakes, and trails."
+  },
+  {
+    "slug": "urban",
+    "title": "Urban",
+    "cover": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200&q=70&auto=format&fit=crop",
+    "description": "Streets, geometry, reflections."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Designing Clean, Accessible Interfaces",
+    "url": "https://example.com/articles/clean-accessible-interfaces",
+    "summary": "Principles and small habits that make interfaces feel obvious.",
+    "published": "2025-10-01T12:00:00Z"
+  },
+  {
+    "title": "Static Sites that Scale",
+    "url": "https://example.com/articles/static-sites-at-scale",
+    "summary": "How to keep static sites fast, maintainable, and secure.",
+    "published": "2025-08-20T12:00:00Z"
+  }
+]
