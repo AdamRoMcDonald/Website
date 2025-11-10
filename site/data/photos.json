@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Full of the presence of a strange and watchful God",
-    "src": "Website/assets/photo1.jpg",
+    "src": "site/data/assets/photo1.jpg",
     "alt": "Orange sunset over waves with a cloudy sky",
     "caption": "",
     "albums": [
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "Forest Trail",
-    "src": "Website/assets/photo2.jpg",
+    "src": "site/data/assets/photo2.jpg",
     "alt": "Watchful Pandora",
     "caption": "",
     "albums": [
@@ -23,7 +23,7 @@
   {
     "id": 3,
     "title": "Trenton, GA",
-    "src": "Website/assets/photo3.jpg",
+    "src": "site/data/assets/photo3.jpg",
     "alt": "",
     "caption": "Rain after rush hour. Perfect glass.",
     "albums": [
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "title": "Isakov Concert",
-    "src": "Website/assets/photo4.jpg",
+    "src": "site/data/assets/photo4.jpg",
     "alt": "",
     "caption": "He played San Luis.",
     "albums": [
