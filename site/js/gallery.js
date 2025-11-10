@@ -14,6 +14,7 @@
   const photos = await res.json();
 
   function render(){
+    console.log("Rendering photos:", photos);
     grid.innerHTML = '';
     photos.forEach(p => {
       const a = document.createElement('button');
