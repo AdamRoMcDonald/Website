@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Full of the presence of a strange and watchful God",
-    "src": "/assets/photo1.jpg",
+    "src": "assets/photo1.jpg",
     "alt": "Orange sunset over waves with a cloudy sky",
     "caption": "",
     "albums": [
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "Watchful Pandora",
-    "src": "/assets/photo2.jpg",
+    "src": "assets/photo2.jpg",
     "alt": "Watchful Pandora",
     "caption": "",
     "albums": [
@@ -23,8 +23,8 @@
   {
     "id": 3,
     "title": "Trenton, GA",
-    "src": "/assets/photo3.jpg",
-    "alt": "",
+    "src": "assets/photo3.jpg",
+    "alt": "Photo titled Trenton, GA",
     "caption": "Rain after rush hour. Perfect glass.",
     "albums": [
       "Like tears in rain",
@@ -34,11 +34,21 @@
   {
     "id": 4,
     "title": "Isakov Concert",
-    "src": "/assets/photo4.jpg",
-    "alt": "",
+    "src": "assets/photo4.jpg",
+    "alt": "Photo titled Isakov Concert",
     "caption": "He played San Luis.",
     "albums": [
       "Like tears in rain",
+      "favorites"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Placeholder Featured Image",
+    "src": "assets/photo5.jpg",
+    "alt": "Green themed placeholder image labeled Featured Photo",
+    "caption": "Swap this placeholder with another image if you want.",
+    "albums": [
       "favorites"
     ]
   }
